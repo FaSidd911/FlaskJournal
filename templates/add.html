@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Add Journal Entry</h3>
+
+<form method='POST', action="">
+
+	</div>
+	<div class="input-group col-lg-8">
+		<input type="text" class="form-control" name="title" placeholder="Title">
+	</div>
+	<br>
+	<div class="input-group col-lg-8">
+		<textarea class="form-control" rows="7" name="text" placeholder="Entry"></textarea>
+	</div>
+	<br>
+	<div class="input-group col-lg-8">
+		<input type="submit" value="Add Entry" class="btn btn-outline-success">
+	</div>
+</form>
+
+<br><br>
+
+{% endblock content %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Edit Journal Entry</h3>
+
+<form method='POST'>
+	<div class="container success">
+
+	<div class="input-group col-lg-8">
+		<input type="text" class="form-control" name="title"  value ="{{p.header}}">
+	</div>
+	<br>
+	<div class="input-group col-lg-8">
+		<textarea class="form-control" rows="7" name="text" >{{p.body}}</textarea>
+	</div>
+	<br>
+	<div class="input-group col-lg-8">
+		<input type="submit" value="Update Entry" class="btn btn-outline-success">
+	</div>
+		</div>
+</form>
+
+<br><br>
+
+{% endblock content %}
